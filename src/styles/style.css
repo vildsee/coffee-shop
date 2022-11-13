@@ -106,6 +106,9 @@ h6 {
   padding: 5px;
   font-size: 1.8rem;
 }
+.nav .navbar {
+  display: flex;
+}
 .nav img {
   height: 50px;
 }

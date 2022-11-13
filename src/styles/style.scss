@@ -87,6 +87,7 @@ h6 {
 #about a {
   color: var(--white);
 }
+
 // Navbar
 .nav {
   background-color: var(--beige-color);
@@ -99,6 +100,9 @@ h6 {
   width: 100%;
   padding: 5px;
   font-size: 1.8rem;
+  .navbar {
+    display: flex;
+  }
   img {
     height: 50px;
   }
