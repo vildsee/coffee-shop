@@ -120,7 +120,7 @@ h6 {
 }
 
 header {
-  background: linear-gradient(to right, rgba(245, 246, 252, 0.1), rgba(248, 245, 241, 0.9)), url("../../images/home-bg.jpg");
+  background: linear-gradient(to right, rgba(245, 246, 252, 0.1), rgba(248, 245, 241, 0.9)), url("https://res.cloudinary.com/dxlainz2v/image/upload/v1668362330/coffee-shop/home-bg_or7z2t.jpg");
   height: 650px;
   width: 100%;
   background-size: cover;
