@@ -89,6 +89,11 @@ h6 {
   font-size: 5rem;
 }
 
+#home a,
+#about a {
+  color: var(--white);
+}
+
 .nav {
   background-color: var(--beige-color);
   display: flex;
@@ -141,6 +146,7 @@ header .home-text {
   justify-content: space-around;
   align-items: center;
   height: auto;
+  padding: 0 2rem;
 }
 #about h2 {
   font-size: 3rem;
@@ -165,9 +171,9 @@ header .home-text {
 }
 
 #menu #menu-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
-  align-items: stretch;
 }
 #menu #menu-items .menu-variety {
   display: flex;
@@ -285,8 +291,159 @@ header .home-text {
 #info {
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
   margin-top: 10rem;
 }
-#info i {
-  height: 5rem;
+#info .info-items,
+#info .mapouter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#info .info-icon {
+  color: var(--main-color);
+}
+#info h6 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+#info p {
+  font-size: 1.4rem;
+}
+
+footer {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+footer #footer-container {
+  display: flex;
+  justify-content: center;
+  border-top: var(--border);
+  width: 90rem;
+}
+footer #footer-container p {
+  margin-top: 2rem;
+}
+footer #footer-container p a {
+  color: var(--main-color);
+}
+footer #footer-container p a:hover {
+  color: var(--black);
+}
+
+@media (max-width: 1230px) {
+  html {
+    font-size: 60%;
+  }
+  #gallery img {
+    width: 35rem;
+  }
+}
+@media (max-width: 1030px) {
+  html {
+    font-size: 55%;
+  }
+  #gallery img {
+    width: 35rem;
+  }
+}
+@media (max-width: 950px) {
+  #gallery-images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+  }
+  .header .flex .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+  .home-bg {
+    background-position: left;
+  }
+  .home-bg .home {
+    justify-content: center;
+  }
+  .home-bg .home .content h3 {
+    font-size: 4rem;
+  }
+  #home .home-text {
+    margin: auto;
+  }
+  #about h2 {
+    font-size: 2.5rem;
+  }
+  #about p {
+    width: auto;
+  }
+  #about img {
+    width: 40rem;
+  }
+  #menu-items {
+    align-items: stretch;
+  }
+}
+@media (max-width: 650px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about p {
+    width: auto;
+  }
+  #menu #menu-items,
+#menu #menu-pics {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  #gallery-images {
+    grid-template-columns: 1fr;
+  }
+  #booking {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading img {
+    height: 3rem;
+  }
+  .heading h3 {
+    font-size: 3rem;
+  }
+  #menu #menu-items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #gallery-images,
+#menu-pics {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
