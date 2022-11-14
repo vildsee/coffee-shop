@@ -177,6 +177,7 @@ header .home-text {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
+  justify-items: center;
 }
 #menu #menu-items .menu-variety {
   display: flex;

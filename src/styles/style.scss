@@ -185,7 +185,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
-
+    justify-items: center;
     .menu-variety {
       display: flex;
       flex-direction: column;
