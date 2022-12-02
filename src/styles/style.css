@@ -431,6 +431,17 @@ footer #footer-container p a:hover {
   #booking {
     flex-direction: column;
   }
+  #booking #booking-pic {
+    margin-bottom: 3rem;
+  }
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #info #open,
+#info #location {
+    margin-top: 3rem;
+  }
 }
 @media (max-width: 450px) {
   html {

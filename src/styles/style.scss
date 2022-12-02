@@ -464,6 +464,17 @@ footer {
   }
   #booking {
     flex-direction: column;
+    #booking-pic {
+      margin-bottom: 3rem;
+    }
+  }
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    #open,
+    #location {
+      margin-top: 3rem;
+    }
   }
 }
 
